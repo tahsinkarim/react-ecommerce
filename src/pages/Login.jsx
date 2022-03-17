@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   width: 100vw;
@@ -7,8 +8,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
-      center;
+    url("https://images.unsplash.com/photo-1537832816519-689ad163238b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=859&q=80");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
   background-color: #fff;
+  ${mobile({ width: "75%" })}
 `;
 
 const Form = styled.form`
